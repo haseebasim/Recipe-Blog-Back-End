@@ -15,13 +15,6 @@ app.use(userRouter);
 app.use(postRouter);
 app.use(commentRouter);
 
-//Serving up static files for production
-if(process.env.NODE_ENV === 'production'){
-  //set static folder
-  app.use(express.static('../client/build'))
-}
-
-
 app.listen(port, () => {
   console.log("HAHA working server! " + port);
 });
