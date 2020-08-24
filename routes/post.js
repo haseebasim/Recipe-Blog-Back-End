@@ -141,7 +141,7 @@ router.delete("/post/:id", async (req, res) => {
 
 const upload = multer({
   limits: {
-    fileSize: 5000000,
+    fileSize: 500000000,
   },
 
   fileFilter(req, file, cb) {
